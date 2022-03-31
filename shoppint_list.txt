@@ -1,5 +1,7 @@
 Soda x2
-Juice x4
-Water x4
+Juice x3
+Tea x4
 Wine x5
+Beer x6
+Sugar x9
 Beer x7

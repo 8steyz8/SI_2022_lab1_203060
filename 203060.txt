@@ -1,0 +1,141 @@
+4. git clone https://github.com/8steyz8/SI_2022_lab1_203060.git
+   (Napraviv kloniranje na se sto imam vo repo od github)
+
+5.git commit -m "Add five items to the shopping list." 
+   (go dodadov file-ot, 5 produkti i na kraj napraviv commit)
+
+6.git commit -a -m "Add quantities to the items."
+   (staviv quantities i potoa povtorno commit)
+
+7.git checkout -b branch1
+ (pravime nov branch)
+  git checkout master
+ (bidejki kje ostaneme na branch1)
+  git checkout -b branch2
+
+8.
+ PS C:\Users\anast\SI_LV1\SI_2022_lab1_203060> git log
+commit f63c433a366b42995833790b710c51fb9218df2a (HEAD -> branch2, master, branch1)
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:44 2022 +0200
+
+    Add quantities to the items.
+
+commit 69db73ab7e186f4250cc835c62b3fbf8ffc4cae4
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 42aa9c8cc9cad775a5a3da3fbf02b24bc922734a (origin/master, origin/HEAD)      
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>       
+Date:   Thu Mar 31 14:10:30 2022 +0200
+
+    Name and surname
+
+commit 214038ac8c76da155a7eb7ddde149f1d4fc7a26c
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>
+Date:   Thu Mar 31 14:10:07 2022 +0200
+
+    Initial commit
+
+9.git push --all origin 
+  (za da se pushnat site branches na github repo)
+
+10.git checkout branch1
+  (se prefrla od master na branch)
+
+11.git commit -m "Change quantity of item #5."
+   (otkako ja smeniv vrednosta napraviv add . i commit)
+
+12.git checkout master
+
+13.git commit -a -m "Change quantity of item #2."
+   (otkako ja smeniv vrednosta napraviv add . i commit)
+
+14. git push --all origin
+
+15. git checkout branch2
+
+16.git commit -a -m "Modify item #4."
+  (otkako ja smeniv vrednosta napraviv add . i commit)
+
+17.
+ commit 8b014f3df0b865deb80a5d47d40aa209941443fe (HEAD -> branch2)
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:16:48 2022 +0200
+
+    Modify item #4
+
+commit f63c433a366b42995833790b710c51fb9218df2a (origin/branch2)
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:44 2022 +0200
+
+    Add quantities to the items.
+
+commit 69db73ab7e186f4250cc835c62b3fbf8ffc4cae4
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 42aa9c8cc9cad775a5a3da3fbf02b24bc922734a
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>
+Date:   Thu Mar 31 14:10:30 2022 +0200
+
+    Name and surname
+
+commit 214038ac8c76da155a7eb7ddde149f1d4fc7a26c
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>
+Date:   Thu Mar 31 14:10:07 2022 +0200
+
+    Initial commit
+
+
+
+18. git reset --soft HEAD^
+    (koristime soft reset bidejki so hard kje go prebrishe
+    commitot sto go barame, a soft mi ovozmozuva da go modificiram)
+    git commit -a -m "Modify item #4 and add item #6"
+
+19.
+commit 2e7345f949dced86b636140f05faf3431cc8b37d (HEAD -> branch2)
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:18:13 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit f63c433a366b42995833790b710c51fb9218df2a (origin/branch2)
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:44 2022 +0200
+
+    Add quantities to the items.
+
+commit 69db73ab7e186f4250cc835c62b3fbf8ffc4cae4
+Author: 8steyz8 <anastazijakovacevic@gmail.com>
+Date:   Thu Mar 31 14:12:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 42aa9c8cc9cad775a5a3da3fbf02b24bc922734a
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>
+Date:   Thu Mar 31 14:10:30 2022 +0200
+
+    Name and surname
+
+commit 214038ac8c76da155a7eb7ddde149f1d4fc7a26c
+Author: Anastazija Kovachevikj <100214075+8steyz8@users.noreply.github.com>
+Date:   Thu Mar 31 14:10:07 2022 +0200
+
+    Initial commit
+
+
+20. git checkout master
+    git merge branch1
+    (pravime merge na branch1 so master)
+
+21. Ne moze direktno da se napravi merge poradi konflikt
+    Za da go rehsam konfliktot, so InteliJ merge 'branch2' into 'master'
+    gi prifativ 2 promeni sto predizviuvale konflikt, edna ne ja prifativ.
+
+

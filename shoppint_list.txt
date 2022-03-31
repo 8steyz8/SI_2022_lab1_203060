@@ -1,5 +1,5 @@
 Soda x2
-Juice x3
+Juice x4
 Water x4
 Wine x5
 Beer x6
